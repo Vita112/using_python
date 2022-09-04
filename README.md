@@ -1,2 +1,2 @@
 # using_python
-## language: Chinese, English
+* language: Chinese, English
