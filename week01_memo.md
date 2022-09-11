@@ -98,8 +98,23 @@ os.chdir(path='./test')    # 更改当前工作目录
         * 判断对象是否为iterator 或者 iterable_object
     * break:终止整个循环，执行循环之后的语句
     * continue:停止当前该轮循环，重新进入循环
-      
-   
+```python
+# continue：当if条件子句为真，表示跳出该轮循环，即不进入其他条件分支判断；
+# break：当if条件子句为真，直接退出整个循环体，执行循环体之外的代码
+s = 0
+for i in range(1, 10):
+    if i%2 == 0:
+        continue
+    if i%10 == 5:
+        break
+    s += i
+print(s)   # s=4
+
+
+```      
+
+
+ 
 ```python
 from collections.abc import Iterator, Iterable
 isinstance(range(10), Iterator)  # False
