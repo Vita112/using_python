@@ -1,4 +1,4 @@
-# why need dictionary?
+# 1. why need dictionary?
 建立对象之间的映射关系，key-value对
 * 创建字典
 ```python
@@ -39,7 +39,7 @@ import json
 data = json.load(file_path)
 
 ```
-# set:  无序不重复元素
+# 2. set:  无序不重复元素
 * set 和 frozenset
 * 集合比较
 ```python
@@ -52,7 +52,7 @@ a_set - b_set  # 'i', 'r'  属于a不属于b   == a_set.difference(b_set)
 a_set ^ b_set  # 'i', 'r' , 't'  a, b中出去交的元素
 
 ```
-# 字典、集合编程示例
+# 3. 字典、集合编程示例
 ```python
 # 1 统计英文单词词频
 text = 'Life can be good, Life can be sad, Life is mostly cheerful, But sometimes sad.'
@@ -115,6 +115,19 @@ if __name__ == "__main__":
     while len(result) < 10:
         result.add(func(data))
     print(result)
+
+```
+
+# 4. Python Extention Libraries
+* ndarray
+* 变长字典Series
+* DataFrame
+```python
+import pandas as pd
+
+music_data =  [("the rolling stones","Satisfaction"),("Beatles","Let It Be"),("Guns N' Roses","Don't Cry"),("Metallica","Nothing Else Matters")] 
+music_df = pd.DataFrame(music_data, index=range(1,5), columns=['singer', 'song_name'])
+
 
 ```
 
